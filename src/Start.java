@@ -4,12 +4,17 @@ public class Start {
         Book book1 = new Book("Eugene Onegin", autor1, 1833);
 
         Autor autor2 = new Autor("Lev", "Tolstoy");
-        Book book2 = new Book("War and Peace", autor2, 1873);
-        System.out.println("book: " + book1.getNameBook() + "\nautor: " + book1.getAutor() + "\nyear: " + book1.getYearBook() + "\n");
-        System.out.println("book: " + book2.getNameBook() + "\nautor: " + book2.getAutor() + "\nyear: " + book2.getYearBook() + "\n");
+        Book book2 = new Book("War and Peace", autor2, 1833);
+        System.out.println(book1.toString());
+        System.out.println(book2.toString());
 
-        book2.setYearBook(1995);
+        System.out.println(autor1.equals(autor2));
+        System.out.println(book1.equals(book2));
+
+        book2.setYearBook(1955);
         System.out.println("---Поменяем год выпуска у книги---");
-        System.out.println("book: " + book2.getNameBook() + "\nautor: " + book2.getAutor() + "\nyear: " + book2.getYearBook() + "\n");
+        System.out.println(book2.toString());
+
+
     }
 }
